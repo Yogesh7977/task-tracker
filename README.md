@@ -12,3 +12,5 @@
 1. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/Yogesh7977/task-tracker.git
+
+![image alt](https://github.com/Yogesh7977/task-tracker/blob/c0f1bbd8185fb8bbbf28256e9b0b6f51b4183560/Screenshot1.png)
