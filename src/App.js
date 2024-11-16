@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import AllTasks from "./components/AllTasks";
+import TaskProvider from "./context/TaskContext";
+import backgroundVideo from '../src/videos/backgroundVideo.mp4'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TaskProvider>
+      {/* Video Background */}
+      <div className="video-background">
+        <video autoPlay muted loop playsInline>
+          <source src={backgroundVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <AllTasks />
+    </TaskProvider>
   );
 }
 

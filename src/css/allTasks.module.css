@@ -1,0 +1,17 @@
+.task-list-container{
+    height: 80vh;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+@media (max-width: 768px) { /* For tablets */
+    .task-list-container {
+      height: 40vh; /* Adjust the height for smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) { /* For mobile devices */
+    .task-list-container {
+      height: 35vh; /* Further reduce height for mobile */
+    }
+  }
